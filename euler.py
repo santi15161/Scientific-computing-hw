@@ -1,34 +1,35 @@
-# Febrero 23 este es el codigo que realizamos en la clase de carlos
+#Codigo del dia Feb-23-2016
+#Santiago Quintana
+#Definir dos funciones f() y g() para un nuevo mapa logistico
 
 import numpy
-import matplotlib
+import matplotlib 
 import matplotlib.pyplot
 
-def funciong (t,r):
+def funciong (t, r):
 	return -r*t
 
-def funcionf (z,delta,r):
-	return z+delta*funciong(z,r)
+def funcionf (z, delta, r):
+	return z + delta *funciong(z,r)
 
-u0=0.1
-delta= 0.01
+y0 = 0.1
+delta = 0.01 
 r = 2.0
-u=funcionf(t,delta,r)
+u = funcionf (y0, delta, r)
+
 print u
 
-n=100
-
-t= range(n)
-y= range(n)
+n = 100
+t = range (n)
+y = range (n)
 
 for i in range(n):
-	u=funcionf(t+delta+r)
-
-y[i]=u
-
+	y1 = funcionf (y0, delta, r)
+	y[i] = y1
 
 
 
 
+### Hoy 24/Feb modificamos este archivo
 
-
+### Y luego lo volvimos a modificar

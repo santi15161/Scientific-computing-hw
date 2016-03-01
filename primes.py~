@@ -8,7 +8,10 @@
 # else:
 #	print y
 #
-#
+# El codigo anteriormente Nos enseña a pedir al usuario ingresar 2 numeros y imprima el menor
+
+
+
 
 # esta funcion define  si un numero es menor que otro 
 
