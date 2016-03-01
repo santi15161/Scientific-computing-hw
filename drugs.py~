@@ -6,7 +6,7 @@ import matplotlib.pyplot
 # Hacer grafico de Q(n)/t
 # Metodo: 
 # Fecha: 25/Feb/2016
-# Autor: Gisela Arrieta Rivera
+# Autor: Santiago Quintana
 
 k = 0.2
 Q0 = 200
