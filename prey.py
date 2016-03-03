@@ -1,3 +1,4 @@
+
 import numpy
 import matplotlib
 import matplotlib.pyplot
@@ -8,7 +9,6 @@ import matplotlib.pyplot
 # Realizado por Santiago Quintana
 
 # Aca definimos las variables
-
 
 ky = 2.0
 kx = 1.06
@@ -24,12 +24,11 @@ y = range(100)
 
 for i in range (100):	
 
-	y1 = y0 - ky * D * y0
+	y1 = y0 - ky * d * y0
 	y0 = y1
 	x[i] = y1
 	y[i] = (i * 0.1)
 	
-
 xnew = numpy.array (x)
 ynew = numpy.array (y)
 
