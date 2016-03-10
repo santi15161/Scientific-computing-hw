@@ -21,7 +21,7 @@ x0 = 0
 y0 = 1
 z0 = 1.05
 
-for i in range(101) 
+for i in range(101):
 
 	x1=(d*O*x0)-(d*o*x0-x0)
 	x0=x1
