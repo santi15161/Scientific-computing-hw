@@ -1,0 +1,19 @@
+# RK for the "drugs" problem 
+
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
+
+t = range (200)
+x = range (200)
+delta = 0.1
+k = 0.2
+x0 = 200.0
+
+for j in range (200):
+	x1 = x0 - delta * k * x0
+	x[i] = x1
+	t[i] = j * delta
+	x0 = x1
+
+

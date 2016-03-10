@@ -27,7 +27,7 @@ ynew = numpy.array (y)
 print xnew
 print ynew
 
-matplotlib.pyplot.plot(ynew, xnew)
+matplotlib.pyplot.plot(ynew, xnew," ")
 matplotlib.pyplot.show ()
 
 
