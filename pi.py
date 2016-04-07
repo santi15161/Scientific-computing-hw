@@ -2,6 +2,9 @@ import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
 import sys
+import math
+
+print "Numero random de 1-10"
 
 np.random.seed(0)
 
@@ -9,32 +12,26 @@ for i in range(10):
 
 	print np.random.random()
 
+R = 1.0
+L = 3.0
+N = 1000
 
+def pi(L, R, N):
 
+	n=0.0
 
+	for i in range(N):
 
+		x=L/2-L*np.random.random()
+		y=L/2-L*np.random.random()
+		xy=np.sqrt(x**2+y**2 )
 
+		if R>=xy :
 
+			n=n+1
+		NPi=n/N*L**2/R**2
+	return NPi
 
+print "Aproximacion a numero pi:", pi(L,R,N)
 
-
-
-R = 1
-n =  np.sqrt(Y**2 + X**2) < R
-
-N0 = 100
-for i in range(N0)
-	X = 
-	Y = 
-	print
-
-N1 = 1000
-for i in range(N1)
-	
-	print
-
-N2 = 10000
-for i in range(N2)
-	
-	print
 
