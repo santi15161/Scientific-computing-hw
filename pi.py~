@@ -29,8 +29,8 @@ def pi(L, R, N):
 		if R>=xy :
 
 			n=n+1
-		P=n/N*L**2/R**2
-	return P
+		NPi=n/N*L**2/R**2
+	return NPi
 
 print "Aproximacion a numero pi:", pi(L,R,N)
 
