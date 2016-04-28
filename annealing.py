@@ -4,20 +4,21 @@ import matplotlib.pyplot as plt
 import sys
 import math
 
-sulution = 100
+solution = 100
+
+x = np.linspace (-3, 3,solution)
 
 def cost(solution):
 
-	x = np.linspace (-3,3,sulution)
-	y = np.linspace (0,2,sulution)
+	# x=np.linspace(-3, 3,solution)
 
-	return np.exp(-(x-1)**2)* np.sin((8*x) + 1)
- 
-plt.plot (cost(sulution))
+	l= np.exp(-(x-1)**2)* np.sin(8*x) + 1
+	return l
+
+# plt.plot(cost(solution))
+
+plt.plot (x, cost(solution))
 plt.show ()
-
-
-
 
 
 def neighbor (solution):
@@ -26,18 +27,10 @@ def neighbor (solution):
 
 	return (2* np.random.random() -1)* step_size + solution
 
+
 T= 1
 Tmin=10**-5
 
+c = np.random.uniform(-3,3,solution)
+c1 = neighbor(solution)
 
-
-#  from scipy.interpolate import interp1d
-#
-#  # generates the data
-#
-#  x = np.linspace (0,10,num=10,endpoint=True)
-#  y = np.cos(-x**2 / 9.0)
-#  f = interp1d (x,y,kind="Cubic")
-#
-#  # evaluates
-#  print f(0.2)
