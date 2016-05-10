@@ -1,0 +1,43 @@
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
+import sys
+import math
+
+n = 100
+np.zeros(0)
+w = np.zeros([n, n], dtype = np.int8)
+
+i = n/2 
+j = n/2
+d = 0
+
+
+def nextDirection (d, c):
+	
+	if d == 0:
+		c = east 
+
+	if d == 1:
+		c = south 
+		
+	if d == 2:
+		c = west 
+
+	if d == 3:
+		c = north 
+
+	return d
+
+
+def moveforward (i, j, d):
+		
+	turtle.forward(i,j,nextDirection)
+	
+	return 
+
+def validindex (i, j, n):
+		
+	return 
+
+plt.imshow(w, interpolation='none', cmap= plt.cm.Greys, extent=(0,n,0,n))
